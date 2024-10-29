@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'Maven_3.9.9' // Указываем имя Maven из конфигурации
+    }
     stages {
         stage('Checkout') {
             steps {
