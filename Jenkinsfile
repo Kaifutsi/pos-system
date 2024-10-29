@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Kaifutsi/pos-system.git'
+                git branch: 'main', url: 'https://github.com/Kaifutsi/pos-system.git'
             }
         }
         stage('Build') {
